@@ -1,0 +1,86 @@
+{
+  "connectors": [
+    {
+      "systemID": "HGW1",
+      "type": "LAMP_CONNECTORTYPE_HUE",
+      "initSettings": [
+        "<ip_address>",
+        "<token>"
+      ]
+    },
+    {
+      "systemID": "LGW1",
+      "type": "LAMP_CONNECTORTYPE_OSRAM",
+      "initSettings": [
+        "<username>",
+        "<password>",
+        "<gateway_id>"
+      ]
+    },
+    {
+      "systemID": "VSS1",
+      "type": "SENSOR_CONNECTORTYPE_VERSASENSE",
+      "initSettings": [
+        "<gateway_address>"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "componentName": "Room",
+      "childComponents": [
+      ],
+      "devices": [
+        {
+          "type": "lamp",
+          "model": "LAMP_TYPE_HUE",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "HGW1"
+        },
+        {
+          "type": "lamp",
+          "model": "LAMP_TYPE_HUE",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "HGW1"
+        },
+        {
+          "type": "lamp",
+          "model": "LAMP_TYPE_OSRAM",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "LGW1"
+        },
+        {
+          "type": "lamp",
+          "model": "LAMP_TYPE_OSRAM",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "LGW1"
+        },
+        {
+          "type": "temperature_sensor",
+          "model": "VERSASENSE_SENSOR",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "VSS1"
+        },
+        {
+          "type": "humidity_sensor",
+          "model": "VERSASENSE_SENSOR",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "VSS1"
+        },
+        {
+          "type": "pressure_sensor",
+          "model": "VERSASENSE_SENSOR",
+          "uniqueID": "<unique_id>",
+          "settings": [],
+          "connector": "VSS1"
+        }
+      ]
+    }
+  ]
+}
